@@ -1,0 +1,35 @@
+<div class="text-layout">
+  <h1>Pipes no tan comunes</h1>
+  <p>
+    Pipes incluídos en Angular - Usualmentee en el common Module.
+  </p>
+</div>
+
+<div class="grid">
+
+  <div class="md:col-6 sm:col-9">
+
+    <p-fieldset legend="i18nSelect Pipe" [toggleable]="true">
+
+      Saludos {{nombre}}, es un placer
+      {{genero | i18nSelect:invitacionMapa}}
+       a nuestro evento.
+
+
+  </p-fieldset>
+
+
+  </div>
+
+
+  <div class="md:col-6 sm:col-9">
+
+    <p-fieldset legend="i18nPlurar Pipe" [toggleable]="true">
+
+      Actualmente{{clientes.length | i18nPlural:clientesMapa}}
+
+
+  </p-fieldset>
+
+
+  </div>

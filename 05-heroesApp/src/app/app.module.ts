@@ -8,17 +8,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 
 import { ErrorPageComponent } from './shared/error-page/error-page.component';
-import { HeroeTarjetaComponent } from './heroe/components/heroe-tarjeta/heroe-tarjeta.component';
 
-//import { HeroeComponent } from './heroe/heroe/heroe.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ErrorPageComponent,
-    HeroeTarjetaComponent,
-   // HeroeComponent
+
   ],
   imports: [
     BrowserModule,

@@ -2,6 +2,7 @@ import { Component, Input } from '@angular/core';
 import { Heroe } from '../../interfaces/heroes.interface';
 
 
+
 @Component({
   selector: 'app-heroe-targeta',
   templateUrl: './heroe-targeta.component.html',
@@ -9,6 +10,8 @@ import { Heroe } from '../../interfaces/heroes.interface';
   ]
 })
 export class HeroeTargetaComponent {
+
+
 
   @Input() heroe!: Heroe;
 

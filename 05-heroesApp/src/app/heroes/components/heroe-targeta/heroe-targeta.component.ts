@@ -6,7 +6,10 @@ import { Heroe } from '../../interfaces/heroes.interface';
 @Component({
   selector: 'app-heroe-targeta',
   templateUrl: './heroe-targeta.component.html',
-  styles: [
+  styles: [`mat-card{
+    margin-top: 20px
+  }
+  `
   ]
 })
 export class HeroeTargetaComponent {
@@ -17,3 +20,8 @@ export class HeroeTargetaComponent {
 
 
 }
+
+
+
+//Start JSON Server
+//json-server --watch db.json

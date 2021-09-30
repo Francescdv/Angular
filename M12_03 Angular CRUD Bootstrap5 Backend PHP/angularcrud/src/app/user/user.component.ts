@@ -8,6 +8,7 @@ import { CrudService } from '../crud.service';
   styleUrls: ['./user.component.css']
 })
 
+
 export class UserComponent implements OnInit {
   id:any;
   user:any;

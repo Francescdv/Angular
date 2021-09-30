@@ -5,7 +5,6 @@ import { CrudService } from './crud.service';
 describe('CrudService', () => {
   let service: CrudService;
 
-
   beforeEach(() => {
     TestBed.configureTestingModule({});
     service = TestBed.inject(CrudService);
@@ -14,10 +13,4 @@ describe('CrudService', () => {
   it('should be created', () => {
     expect(service).toBeTruthy();
   });
-
-
-
-
-
 });
-

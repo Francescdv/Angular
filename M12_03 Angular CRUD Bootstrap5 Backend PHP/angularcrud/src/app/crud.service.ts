@@ -5,6 +5,9 @@ import { HttpClient } from '@angular/common/http';
 })
 export class CrudService {
   userData:any;
+  userid:any;
+  singleuserdata:any
+
   constructor(private http:HttpClient) { }
   //get all users  details
   public getusers()
@@ -21,15 +24,14 @@ export class CrudService {
   });
   }
 
-  public deleteuser(userid)
-  {
-    return this.http.post('http://localhost/users.php/'
-    , userid).subscribe((res: Response) => {});
-  }
+   //delete user
+   public deleteuser(userid)
+   {
+     return this.http.post('http://localhost/users.php/'
+     , userid).subscribe((res: Response) => {});
+   }
 
-  userid:any;
-  singleuserdata:any;
-  //get single user
+    //get single user
   public getsingleuser(userid)
   {
     return this.http.post('http://localhost/users.php/'
@@ -38,8 +40,13 @@ export class CrudService {
 
 
     });
+  }
 
-
-}
+  //update user
+  public updateuser(userid)
+  {
+    return this.http.post('http://localhost/users.php/'
+    , userid).subscribe((res: Response) => {});
+  }
 
 }

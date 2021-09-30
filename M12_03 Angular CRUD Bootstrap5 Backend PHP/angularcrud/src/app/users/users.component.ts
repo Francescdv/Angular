@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 import { CrudService } from '../crud.service';
 import Swal from 'sweetalert2/dist/sweetalert2.js';
 
@@ -8,6 +7,7 @@ import Swal from 'sweetalert2/dist/sweetalert2.js';
   templateUrl: './users.component.html',
   styleUrls: ['./users.component.css']
 })
+
 
 export class UsersComponent implements OnInit {
   data = [];
